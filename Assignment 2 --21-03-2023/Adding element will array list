@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class ArrayList1 {
+    public static void main(String[] args) {
+
+
+        ArrayList<Integer> arrList = new ArrayList<Integer>();
+
+
+        arrList.add(10);
+        arrList.add(20);
+        arrList.add(30);
+
+
+        System.out.println("Array List: " + arrList);
+    }
+}
