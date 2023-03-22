@@ -1,0 +1,15 @@
+import java.util.LinkedList;
+
+public class ListSize {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>();
+
+
+        list.add("Hello");
+        list.add("World");
+        list.add("Java");
+
+
+        System.out.println("The size of the list is: " + list.size());
+    }
+}
