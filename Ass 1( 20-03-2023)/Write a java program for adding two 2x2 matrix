@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class MatrixAddition {
+   public static void main(String[] args) {
+      int[][] matrix1 = new int[2][2];
+      int[][] matrix2 = new int[2][2];
+      int[][] resultMatrix = new int[2][2];
+      Scanner input = new Scanner(System.in);
+
+      // Input matrix1
+      System.out.println("Enter values for matrix1:");
+      for (int i = 0; i < 2; i++) {
+         for (int j = 0; j < 2; j++) {
+            matrix1[i][j] = input.nextInt();
+         }
+      }
+
+      // Input matrix2
+      System.out.println("Enter values for matrix2:");
+      for (int i = 0; i < 2; i++) {
+         for (int j = 0; j < 2; j++) {
+            matrix2[i][j] = input.nextInt();
+         }
+      }
+
+      // Add matrices
+      for (int i = 0; i < 2; i++) {
+         for (int j = 0; j < 2; j++) {
+            resultMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
+         }
+      }
+
+      // Print result
+      System.out.println("The sum of the matrices is:");
+      for (int i = 0; i < 2; i++) {
+         for (int j = 0; j < 2; j++) {
+            System.out.print(resultMatrix[i][j] + " ");
+         }
+         System.out.println();
+      }
+   }
+}
