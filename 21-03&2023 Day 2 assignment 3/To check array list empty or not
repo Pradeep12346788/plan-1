@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class RemoveList {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+
+        // Adding some elements to the list
+        list.add("Hello");
+        list.add("World");
+        list.add("Java");
+
+        // Removing an element from the list
+        list.remove(1);
+
+        // Printing the elements of the list after removal
+        for (String element : list) {
+            System.out.println(element);
+        }
+    }
+}
+0 comments on commit 70fd1b4
