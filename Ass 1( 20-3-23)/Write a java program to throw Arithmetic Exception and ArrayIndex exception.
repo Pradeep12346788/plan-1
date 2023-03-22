@@ -1,0 +1,20 @@
+public class ExceptionDemo {
+    public static void main(String[] args) {
+        int[] numbers = { 1, 2, 3 };
+        int divisor = 0;
+
+        try {
+
+            int result = numbers[3] / divisor;
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException: " + e.getMessage());
+        }
+
+        try {
+
+            int number = numbers[4];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException: " + e.getMessage());
+        }
+    }
+}
